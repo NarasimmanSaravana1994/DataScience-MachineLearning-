@@ -12,7 +12,7 @@ def Internal_correlation(x,y):
     for value in y:
         Y.append(value*value)
         
-    return(((sum(xy)*6)-(sum(x)*sum(y)))/math.sqrt(((sum(X)*6)-(sum(x)*sum(x)))*((sum(Y)*6)-(sum(y)*sum(y)))))
+    return(((sum(xy)*len(x))-(sum(x)*sum(y)))/math.sqrt(((sum(X)*len(x))-(sum(x)*sum(x)))*((sum(Y)*len(x))-(sum(y)*sum(y)))))
     
     
     
