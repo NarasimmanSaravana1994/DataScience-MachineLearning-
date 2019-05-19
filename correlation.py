@@ -24,10 +24,10 @@ def Correlation(x,y):
     
 
 #Sample arguments
-x = [43,21,25,42,57,59]
-y = [[99,65,79,75,87,81],[99,65,79,75,87,81],[99,65,79,75,87,81]]
+dependentVariable = [43,21,25,42,57,59]
+independentVariable = [[99,65,79,75,87,81],[99,65,79,75,87,81],[99,65,79,75,87,81]]
 
 
 
 # Calling the fucntion
-Correlation(x,y)
+Correlation(dependentVariable,independentVariable)
