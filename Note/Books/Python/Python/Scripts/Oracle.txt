@@ -1,0 +1,16 @@
+path="C:/Users/mirra.balaji/Music/aclImdb/test/neg"
+os.chdir(path)
+
+
+connection = cx_Oracle.connect('PRODUCT_TEST/tiger@10.0.0.9/orcl.ducenitchn.com/orcl')
+cur = connection.cursor()
+
+
+data_corpus=[]
+a=0
+filelist = glob.glob("./*.txt")
+
+for file in filelist:
+    with open(file, encoding="utf8") as infile:
+        data_corpus.append(infile.read())
+        a=+1

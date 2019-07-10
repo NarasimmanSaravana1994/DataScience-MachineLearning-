@@ -1,0 +1,26 @@
+###
+# mssql
+# ConnectionString = "DRIVER={SQL Server Native Client 11.0};SERVER=bellsqlnew;UID=qa;PWD=bellqa;DATABASE=NORTHWIND"
+# conn = pyodbc.connect(ConnectionString)
+
+#Postgre
+#conn = pyodbc.connect("Driver={PostgreSQL ANSI(x64)};Server=10.0.0.9;uid=postgres;pwd=Temp1234;Database=SSPLSRV3")
+
+#MySql
+#conn = pyodbc.connect("Driver={MySQL ODBC 5.3 ANSI Driver};Server=10.0.0.9;uid=root;pwd=root;Database=northwind")
+
+# import cx_Oracle
+###############################connection = cx_Oracle.connect('userid/password@99.999.9.99:PORT/SID')
+# connection = cx_Oracle.connect('PRODUCT_TEST/DUCEN@10.0.0.9/orcl.ducenitchn.com/orcl')
+#
+# cur = connection.cursor()
+# cur.execute("select * from NEW_TELECOM_WITH_LOCATION")
+# data = cur.fetchall()
+
+
+
+# Credentials Required :
+# MySql - Driver , Server , Uid , Password , Database
+# MsSql - Driver , Server , Uid , Password , Database
+# PostGre - Driver , Server , Uid , Password , Database
+# Oracle - Package , Server , Uid , Pwd , Port , Sid

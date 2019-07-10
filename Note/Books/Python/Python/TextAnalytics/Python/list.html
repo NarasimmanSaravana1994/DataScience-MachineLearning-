@@ -1,0 +1,25 @@
+<html>
+<body>
+<table border = 1>
+         <thead>
+            <td>Comment_Index</td>
+            <td>Comments</td>
+            <td>Actual</td>
+            <td>Probability_0</td>
+            <td>Probability_1</td>
+            <td>Predicted</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["Comment_Index"]}}</td>
+               <td>{{row["Comments"]}}</td>
+               <td> {{ row["Actual"]}}</td>
+               <td>{{row['Probability_0']}}</td>
+               <td>{{row['Probability_1']}}</td>
+               <td>{{row['Predicted']}}</td>	
+            </tr>
+         {% endfor %}
+</table>
+</body>
+</html>

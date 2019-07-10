@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Text Analytics</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <div class = container>
+    <div class="jumbotron">
+        <h1>TEXT ANALYSIS</h1>
+        <p>Imagine a gold mine portrait with text placed instead of gold.</p>
+    </div>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#CreateConnect"><h4>User Inputs<h4></a></li>
+        <li><a data-toggle="tab" href="#Algorithm"><h4>Naive Bayes Training Results<h4></a></li>
+        <li><a data-toggle="tab" href="#Scoring"><h4>Naive Bayes Scoring Results<h4></a></li>
+    </ul>
+    <br>
+    <div class="tab-content">
+        <div id="CreateConnect" class="tab-pane fade in active">
+            <div class="container">
+             
+                    <div class="form-group">
+                        <label for="server">Server Name:</label>
+                        <input type="text" class="form-control" id="server" placeholder="Enter Server name" value="MsSql" >
+                    </div>
+                    <div class="form-group">
+                        <label for="serverip">Server Ip Address:</label>
+                        <input type="text" class="form-control" id="serverip" placeholder="Enter Server ip"value="bellsqlnew">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter username" value="qa">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password" value="bellqa">
+                    </div>
+                    <div class="form-group">
+                        <label for="port">Port:</label>
+                        <input type="text" class="form-control" id="port" placeholder="Enter port" value="1433">
+                    </div>
+                    <div class="form-group">
+                        <label for="database">Default Database:</label>
+                        <input type="text" class="form-control" id="database" placeholder="Enter default database name" value="NORTHWIND">
+                    </div>
+                    <div class="form-group">
+                        <label for="sid">SId:</label>
+                        <input type="text" class="form-control" id="sid" placeholder="Enter SId" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="query">Query:</label>
+                        <input type="text" class="form-control" id="query" placeholder="Enter Query"value="select top 100 * from SampleComments ">
+                    </div>
+                    <div class="form-group">
+                        <label for="Independant">Features (Input Column Containing Review Comments):</label>
+                        <input type="text" class="form-control" id="Independant" placeholder="Enter the column name" value="Comments">
+                    </div>
+                    <div class="form-group">
+                        <label for="dependant">Sentiment (Input Column Containing Review Category):</label>
+                        <input type="text" class="form-control" id="dependant" placeholder="Enter the column name"value="Category">
+                    </div>
+                    <div class="form-group">
+                        <label for="Variable">Sensitive Sentiment:</label>
+                        <input type="text" class="form-control" id="Variable" placeholder="Enter the Sentiment" value="pos">
+                    </div>
+                 <button type="button" id="btnconnection"  class="btn btn-default">Submit</button>
+
+                
+
+            </div>
+
+        </div>
+		<div id="Algorithm" class="tab-pane fade">
+            <div id="Naive">
+                <h3>Naive Bayes Algorithm</h3><br>
+                
+                <h4> Total number of Comments : 25000</h4>
+                <h4> Total number of Positive Comments : 12500</h4>
+                <h4> Total number of Negative Comments : 12500</h4>
+                <div id="myDiv1">
+                <h3>Training!!, it is really a silent acting :)</h3>
+                </div>
+            </div><br>
+            <div id="AlgorithmTable"></div>
+        </div>
+        <div id="Scoring" class="tab-pane fade">
+            
+            <div id="myDiv" class="tab-pane fade">
+            <h3>Calm Down, your data is almost ready</h3>         
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>

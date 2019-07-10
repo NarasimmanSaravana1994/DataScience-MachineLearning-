@@ -1,0 +1,12 @@
+Linear regression
+Logistic regression
+Decision tree
+Random forest
+Gradient boosting
+Stochastic Gradient Descent
+SVM
+Kmeans
+Mini-batch Kmeans
+DBScan
+Ward hierchical clustering
+Gaussian mixture
